@@ -31,6 +31,6 @@ You can find more details about our work here:
 </target>
 ~~~~
  5. run the following command:
- ~~~~
- ant pitestPlus
- ~~~~~
+~~~~
+ant pitestPlus
+~~~~~

@@ -20,3 +20,17 @@ You can find more details about our work here:
  <pathelement location="lib/pitestPlus.jar" />
  </path>
 ~~~~
+ 4. add a specific target for extended PITest:
+~~~~
+<target name="pitestPlus" depends="test">
+                <path id="mutation.path">
+                        <path refid="pitestPlus.path"/>
+                        <path refid="test.path"/>
+                </path>
+                <pitest pitClasspath="pitest.path" threads="2" classPath="mutation.path" targetTests="com.example.*" targetClasses="com.example.*" reportDir="pitReports" sourceDir="src" />
+        </target>
+~~~~
+ 5. run the following command:
+ ~~~~
+ ant pitestPlus
+ ~~~~~

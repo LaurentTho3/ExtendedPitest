@@ -9,4 +9,14 @@ You can find more details about our work here:
 
 ## How to run Extended PITest?
 
-Coming soon!
+ 1. Follow the tutorial at this address: [PITest tutorial](http://pitest.org/quickstart/ant/)
+ 2. add the new jar (found in this GitHub repository) in the lib folder
+ 3. add a path element:
+ <code>
+ <path id="pitestPlus.path">
+                <!-- must currently include the test library on the tool classpath. this will be fixed in a future version-->
+                <pathelement location="lib/junit-4.9.jar" />
+                <pathelement location="lib/pitest-ant-1.1.4.jar" />
+                <pathelement location="lib/pitestPlus.jar" />
+        </path>
+ </code>

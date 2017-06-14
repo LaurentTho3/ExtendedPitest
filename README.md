@@ -9,4 +9,17 @@ You can find more details about our work here:
 
 ## How to run Extended PITest?
 
-Coming very soon!
+We make Extended PITest available as a JAR file. Thus, it can be run Extended Pitest through Ant or the command line, just as the normal PITest.
+Instructions for running PITest through Ant and the command line are available at http://pitest.org/quickstart/ . pitestPlus.jar then replaces the usual pitest.jar file.
+
+As the current build of Extended PITest is based on an older version of PITest, we also provide the corresponding pitest-ant.jar and pitest-command-line.jar files. Also note that this version does not need the pitest-entry.jar file mentioned in the instructions.
+
+The additional mutants can be used by passing their name to the mutators argument and are as follows:
+
+    ABS: replaces a variable with its additive inverse
+    AOD: replaces an arithmetic expression with each of its operands
+    AOR: replaces an arithmetic operator with every other one
+    CRCR: replaces a constant a with its additive inverse, or with 1, 0, a+1, a-1
+    OBBN: replaces the operators & with | and vice versa
+    ROR: replaces the a relational operator with every other one
+    UOI: Replaces a variable with a unary operator or removes an instance of an unary operator

@@ -23,3 +23,8 @@ The additional mutants can be used by passing their name to the mutators argumen
     OBBN: replaces the operators & with | and vice versa
     ROR: replaces the a relational operator with every other one
     UOI: Replaces a variable with a unary operator or removes an instance of an unary operator
+
+## Source code
+The source code for the additional mutators is provided in the extended folder.
+To add these mutators to your version of pit, place this folder in org/pitest/mutationtest/engine/gregor/mutators/experimental/ and register the mutators in org.pitest.mutationtest.engine.gregor.config.MUTATORS.
+In order to use the AODMutator2 mutator, a getAccess() method should be added to org.pitest.mutationtes.engine.gregor.MethodInfo.

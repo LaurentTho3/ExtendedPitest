@@ -9,10 +9,12 @@ You can find more details about our work here:
 
 ## How to run Extended PITest?
 
-We make Extended PITest available as a JAR file. Thus, it can be run Extended Pitest through Ant or the command line, just as the normal PITest.
-Instructions for running PITest through Ant and the command line are available at http://pitest.org/quickstart/ . pitestPlus.jar then replaces the usual pitest.jar file.
+The extended set of mutants is now available in PIT's main code at https://github.com/hcoles/pitest/
 
-As the current build of Extended PITest is based on an older version of PITest, we also provide the corresponding pitest-ant.jar and pitest-command-line.jar files. Also note that this version does not need the pitest-entry.jar file mentioned in the instructions.
+~~We make Extended PITest available as a JAR file. Thus, it can be run Extended Pitest through Ant or the command line, just as the normal PITest.
+Instructions for running PITest through Ant and the command line are available at http://pitest.org/quickstart/ . pitestPlus.jar then replaces the usual pitest.jar file.~~
+
+~~As the current build of Extended PITest is based on an older version of PITest, we also provide the corresponding pitest-ant.jar and pitest-command-line.jar files. Also note that this version does not need the pitest-entry.jar file mentioned in the instructions.~~
 
 The additional mutants can be used by passing their name to the mutators argument and are as follows:
 
